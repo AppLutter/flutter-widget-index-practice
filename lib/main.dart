@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_index_practice/absorb_pointer_practice.dart';
+import 'package:flutter_widget_index_practice/alert_dialog_practice.dart';
 import 'package:flutter_widget_index_practice/common_navigate.dart';
 
 void main() {
@@ -12,11 +14,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            backgroundColor: CupertinoColors.systemIndigo,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(
+              vertical: 5.0,
+              horizontal: 35.0,
+            ),
+          ),
+        ),
         primarySwatch: Colors.blue,
       ),
-      home: _MainHome(),
+      home: const _MainHome(),
     );
   }
 }
@@ -35,6 +48,7 @@ class _MainHome extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         children: const [
           _PartButton(child: AbsorbPointerPractice()),
+          _PartButton(child: AlertDialogPractice()),
         ],
       ),
     );

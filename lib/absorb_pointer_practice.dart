@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_index_practice/default_scaffold.dart';
 
 class AbsorbPointerPractice extends StatefulWidget {
   const AbsorbPointerPractice({super.key});
@@ -25,8 +26,7 @@ class _AbsorbPointerPracticeState extends State<AbsorbPointerPractice> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return DefaultScaffold(
       body: Center(
         child: Stack(
           alignment: Alignment.center,
