@@ -7,3 +7,9 @@ AbsorbPointer
 IgnorePointer
 - 현재 감싼 위젯의 하위 위젯들의 터치 이벤트를 무시한다.
 
+AlertDialog
+- 확인이 필요한 상황에 대해 사용자에게 알림
+- 컨텐츠가 너무 커서 화면에 맞지 않는 경우에는 SingleChildScrollView와 같은 content(프로퍼티 중 하나) 스크롤 위젯을 쓰는 것이 좋다
+- 단 ListView, GridView, CustomScrollView와 같은 위젯은 작동하지 않는다.
+- 만약 위와 같은 위젯을 쓰려면 Dialog 위젯을 사용하자
+- 사용자에게 여러 옵션 중 선택할 수 있는 대화 상자의 경우 SimpleDialog를 사용하자
