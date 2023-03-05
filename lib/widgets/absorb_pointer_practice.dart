@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_index_practice/default_scaffold.dart';
+import 'package:flutter_widget_index_practice/common/default_scaffold.dart';
 
 class AbsorbPointerPractice extends StatefulWidget {
   const AbsorbPointerPractice({super.key});

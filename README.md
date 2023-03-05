@@ -13,3 +13,6 @@ AlertDialog
 - 단 ListView, GridView, CustomScrollView와 같은 위젯은 작동하지 않는다.
 - 만약 위와 같은 위젯을 쓰려면 Dialog 위젯을 사용하자
 - 사용자에게 여러 옵션 중 선택할 수 있는 대화 상자의 경우 SimpleDialog를 사용하자
+
+Align
+- 자체 내에서 자식을 정렬하고 선택적으로 자식 크기에 따라 자체 크기를 조정하는 위젯
