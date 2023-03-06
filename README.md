@@ -16,3 +16,12 @@ AlertDialog
 
 Align
 - 자체 내에서 자식을 정렬하고 선택적으로 자식 크기에 따라 자체 크기를 조정하는 위젯
+
+AlignAlign
+- 플래그 값 또는 지정된 값에 따라 Align이 변화할 때 애니메이션을 넣어주는 위젯
+
+AnimatedBuilder
+- animation을 적용할 수 있는 부분을 생성하는 빌더 위젯
+
+AnimatedContainer
+- Container의 요소들이 변화 할 때 애니메이션이 적용되는 컨테이너
