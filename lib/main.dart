@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_index_practice/common/part_button.dart';
-import 'package:flutter_widget_index_practice/widgets/absorb_pointer_practice.dart';
-import 'package:flutter_widget_index_practice/widgets/alert_dialog_practice.dart';
-import 'package:flutter_widget_index_practice/widgets/align.dart';
-import 'package:flutter_widget_index_practice/widgets/animated_align_practice.dart';
+
+import 'widgets/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,6 +50,9 @@ class _MainHome extends StatelessWidget {
           PartButton(child: AlertDialogPractice()),
           PartButton(child: AlignPractice()),
           PartButton(child: AnimatedAlignPractice()),
+          PartButton(child: AnimatedBuilderPractice()),
+          PartButton(child: AnimatedBuilderPractice2()),
+          PartButton(child: AnimatedContainerPractice()),
         ],
       ),
     );
