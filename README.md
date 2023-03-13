@@ -25,3 +25,6 @@ AnimatedBuilder
 
 AnimatedContainer
 - Container의 요소들이 변화 할 때 애니메이션이 적용되는 컨테이너
+
+AnimatedCrossFade
+- 두 위젯을 번갈아가면서 FadeOut, FadeIn 할 수 있는 위젯
