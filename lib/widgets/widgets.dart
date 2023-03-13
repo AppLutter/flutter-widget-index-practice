@@ -6,3 +6,4 @@ export 'animated_builder_practice.dart';
 export 'animated_builder_practice2.dart';
 export 'animated_container_practice.dart';
 export 'animated_cross_fade_practice.dart';
+export 'animated_cross_fade_practice2.dart';

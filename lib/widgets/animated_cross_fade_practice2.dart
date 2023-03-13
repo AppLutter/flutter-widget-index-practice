@@ -1,47 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_index_practice/common/default_scaffold.dart';
 
-class AnimatedCrossFadePractice extends StatefulWidget {
-  const AnimatedCrossFadePractice({Key? key}) : super(key: key);
+class AnimatedCrossFadePractice2 extends StatefulWidget {
+  const AnimatedCrossFadePractice2({Key? key}) : super(key: key);
 
   @override
-  State<AnimatedCrossFadePractice> createState() => _AnimatedCrossFadePracticeState();
+  State<AnimatedCrossFadePractice2> createState() => _AnimatedCrossFadePractice2State();
 }
 
-class _AnimatedCrossFadePracticeState extends State<AnimatedCrossFadePractice> {
+class _AnimatedCrossFadePractice2State extends State<AnimatedCrossFadePractice2> {
   bool isChanged = false;
 
   @override
   Widget build(BuildContext context) {
-    final firstChild = GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTap: () {
-        print('first 눌림');
-      },
-      child: const Text(
-        '안녕하세요',
-        style: TextStyle(
-          fontSize: 45.0,
-          color: Colors.red,
-          fontWeight: FontWeight.w700,
-        ),
+    final inputDecoration = InputDecoration(
+      fillColor: Colors.blueAccent.withOpacity(0.3),
+      filled: true,
+      border: OutlineInputBorder(
+        borderSide: BorderSide.none,
+        borderRadius: BorderRadius.circular(15.0),
       ),
     );
-    final secondChild = GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTap: () {
-        print('second 눌림');
-      },
-      child: const Text(
-        '변했습니다',
-        style: TextStyle(
-          fontSize: 25,
-          color: Colors.purpleAccent,
-          fontWeight: FontWeight.w700,
-        ),
-      ),
+    final firstChild = TextField(
+      decoration: inputDecoration,
     );
-    const duration = Duration(seconds:5);
+    final secondChild = TextField(
+      decoration: inputDecoration,
+    );
+
+    const duration = Duration(seconds: 5);
     const reverseDuration = Duration(seconds: 5);
 
     return DefaultScaffold(
@@ -51,7 +38,7 @@ class _AnimatedCrossFadePracticeState extends State<AnimatedCrossFadePractice> {
           children: [
             Container(
               // color: Colors.purpleAccent.withOpacity(0.3),
-              child: AnimatedCrossFade(
+              child:  AnimatedCrossFade(
                 firstChild: firstChild,
                 secondChild: secondChild,
 
@@ -82,6 +69,11 @@ class _AnimatedCrossFadePracticeState extends State<AnimatedCrossFadePractice> {
                   );
                 },
 
+                /// TextField를 쓸 때 현재 보여지는 위젯에 포커스를 주고(키보드가 올라오게 됨)
+                /// Fade를 전환하면, 키보드가 계속 올라와있고 입력이 가능해진다.. 여기서는 현재 안보이는 TextField에 계속 포커스가 남아있어서 그렇다
+                /// 사라졌을 때(top에서 bottom으로 전환) 포커스도 사라지게 하려면 [excludeBottomFocus]를 true를 주면된다. (기본 값이 true라 명시 안해도 됨)
+                /// 포토캐논 겹치기처럼 안보이는 상태에서도 포커스를 유지하려면 false를 주면 된다.
+                excludeBottomFocus: true,
               ),
             ),
             ElevatedButton(
