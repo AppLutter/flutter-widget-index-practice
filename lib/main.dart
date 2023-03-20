@@ -55,6 +55,7 @@ class _MainHome extends StatelessWidget {
           PartButton(child: AnimatedContainerPractice()),
           PartButton(child: AnimatedCrossFadePractice()),
           PartButton(child: AnimatedCrossFadePractice2()),
+          PartButton(child: TextPractice()),
         ],
       ),
     );

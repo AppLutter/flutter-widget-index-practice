@@ -28,3 +28,8 @@ AnimatedContainer
 
 AnimatedCrossFade
 - 두 위젯을 번갈아가면서 FadeOut, FadeIn 할 수 있는 위젯
+
+
+Text
+- 단일 스타일 텍스트
+- 여러 줄에 끊어지거나 모두 같은 줄에 표시될 수 있음
