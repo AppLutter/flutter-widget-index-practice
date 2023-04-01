@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: 'Exo2',
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
             backgroundColor: CupertinoColors.systemIndigo,
@@ -55,7 +56,12 @@ class _MainHome extends StatelessWidget {
           PartButton(child: AnimatedContainerPractice()),
           PartButton(child: AnimatedCrossFadePractice()),
           PartButton(child: AnimatedCrossFadePractice2()),
+          PartButton(child: AnimatedDefaultTextStylePractice()),
           PartButton(child: TextPractice()),
+          PartButton(child: TextPractice2()),
+          PartButton(child: AnimatedListPractice()),
+          PartButton(child: AnimatedModalBarrierPractice()),
+          PartButton(child: AnimatedOpacityPractice()),
         ],
       ),
     );

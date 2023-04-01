@@ -38,7 +38,7 @@ class _AnimatedCrossFadePractice2State extends State<AnimatedCrossFadePractice2>
           children: [
             Container(
               // color: Colors.purpleAccent.withOpacity(0.3),
-              child:  AnimatedCrossFade(
+              child: AnimatedCrossFade(
                 firstChild: firstChild,
                 secondChild: secondChild,
 

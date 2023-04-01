@@ -29,6 +29,8 @@ AnimatedContainer
 AnimatedCrossFade
 - 두 위젯을 번갈아가면서 FadeOut, FadeIn 할 수 있는 위젯
 
+AnimatedDefaultTextStyle
+- 기본 텍스트 스타일이 변화할 때 애니메이션이 적용되는 위젯
 
 Text
 - 단일 스타일 텍스트

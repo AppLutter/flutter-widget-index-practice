@@ -21,7 +21,7 @@ class _AnimatedCrossFadePracticeState extends State<AnimatedCrossFadePractice> {
       child: const Text(
         '안녕하세요',
         style: TextStyle(
-          fontSize: 45.0,
+          fontSize: 25.0,
           color: Colors.red,
           fontWeight: FontWeight.w700,
         ),
@@ -41,8 +41,8 @@ class _AnimatedCrossFadePracticeState extends State<AnimatedCrossFadePractice> {
         ),
       ),
     );
-    const duration = Duration(seconds:5);
-    const reverseDuration = Duration(seconds: 5);
+    const duration = Duration(seconds:3);
+    const reverseDuration = Duration(seconds: 3);
 
     return DefaultScaffold(
       body: SizedBox.expand(
