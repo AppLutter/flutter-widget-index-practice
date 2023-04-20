@@ -11,6 +11,8 @@ export 'animated_default_text_style_practice.dart';
 export 'animated_list_practice.dart';
 export 'animated_modal_barrier_practice.dart';
 export 'animated_opacity_practice.dart';
+export 'animated_physical_model_practice.dart';
+export 'animated_positioned_practice.dart';
 
 export 'text_practice.dart';
 export 'text_practice2.dart';

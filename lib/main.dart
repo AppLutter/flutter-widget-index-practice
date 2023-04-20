@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_index_practice/common/part_button.dart';
-import 'package:flutter_widget_index_practice/widgets/animated_physical_model_practice.dart';
 
 import 'widgets/widgets.dart';
 
@@ -64,6 +63,7 @@ class _MainHome extends StatelessWidget {
           PartButton(child: AnimatedModalBarrierPractice()),
           PartButton(child: AnimatedOpacityPractice()),
           PartButton(child: AnimatedPhysicalModelPractice()),
+          PartButton(child: AnimatedPositionedPractice()),
         ],
       ),
     );

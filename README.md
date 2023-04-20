@@ -39,11 +39,13 @@ AnimatedModalBarrier
 - 뒤에 요소와 상호작용 할 수 없게 하고 나아가 해당 위젯 선택시 pop까지 시켜버릴 수 있는 위젯
 
 AnimatedOpacity
-- 투명도가 시간에 따라 점점 변하는 위젯
+- 투명도에 애니메이션 값을 주는 위젯 
 
 AnimatedPhysicalModel
-- 위젯이 떠있는 듯 하게 보이도록 elevation 효과를 시간에 따라 다르게 주는 위젯
+- elevation이 변할 때 애니메이션을 적용시켜주는 위젯
 
+AnimatedPositioned
+- 위젯의 위치, 너비, 높이가 변할 때 애니메이션을 적용 시켜주는 위젯
 
 Text
 - 단일 스타일 텍스트
