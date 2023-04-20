@@ -32,6 +32,19 @@ AnimatedCrossFade
 AnimatedDefaultTextStyle
 - 기본 텍스트 스타일이 변화할 때 애니메이션이 적용되는 위젯
 
+AnimatedList + AnimatedListState
+- 요소 추가 삭제에 애니메이션이 적용되는 위젯
+
+AnimatedModalBarrier
+- 뒤에 요소와 상호작용 할 수 없게 하고 나아가 해당 위젯 선택시 pop까지 시켜버릴 수 있는 위젯
+
+AnimatedOpacity
+- 투명도가 시간에 따라 점점 변하는 위젯
+
+AnimatedPhysicalModel
+- 위젯이 떠있는 듯 하게 보이도록 elevation 효과를 시간에 따라 다르게 주는 위젯
+
+
 Text
 - 단일 스타일 텍스트
 - 여러 줄에 끊어지거나 모두 같은 줄에 표시될 수 있음

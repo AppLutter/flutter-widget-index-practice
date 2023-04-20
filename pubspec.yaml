@@ -107,7 +107,8 @@ flutter:
         - asset: fonts/Exo2-ThinItalic.ttf
           weight: 100
           style: italic
-
+  assets:
+    - assets/
   # fonts:
   #   - family: Schyler
   #     fonts:
