@@ -64,6 +64,7 @@ class _MainHome extends StatelessWidget {
           PartButton(child: AnimatedOpacityPractice()),
           PartButton(child: AnimatedPhysicalModelPractice()),
           PartButton(child: AnimatedPositionedPractice()),
+          PartButton(child: AnimatedSizePractice()),
         ],
       ),
     );

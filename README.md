@@ -47,6 +47,10 @@ AnimatedPhysicalModel
 AnimatedPositioned
 - 위젯의 위치, 너비, 높이가 변할 때 애니메이션을 적용 시켜주는 위젯
 
+AnimatedSize
+- 사이즈 변경에 애니메이션을 적용시켜주는 위젯
+- 되돌아가는 애니메이션에 위치 조정에 연구가 좀 더 필요
+
 Text
 - 단일 스타일 텍스트
 - 여러 줄에 끊어지거나 모두 같은 줄에 표시될 수 있음
